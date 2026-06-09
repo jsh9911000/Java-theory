@@ -40,7 +40,7 @@ public class MainClass05 {
 		String name = "JOHN";
 		System.out.println(name.toLowerCase());
 		
-		System.out.println("메인 메소드가 시작되었습니다.");
+		System.out.println("메인 메소드가 종료되었습니다.");
 	}
 
 }
