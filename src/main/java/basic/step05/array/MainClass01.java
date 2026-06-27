@@ -31,6 +31,8 @@ public class MainClass01 {
 		
 		String[] names = {"홍길동", "김구라", "바보", "멍충이"};
 		
+		String[] limitSize = new String[3];		//배열은 한번 크기를 정하면 그이상 데이터를 넣거나 바꿀 수 없다.
+		
 		String name = "홍길동";
 
 		int size = names.length;	//자바에서 기본 제공하는 배열의 사이즈를 확인할 수 있는 필드.
@@ -45,6 +47,12 @@ public class MainClass01 {
 		strList.add("멍충이");
 		
 		int strListSize = strList.size();	//컬렉션(ArrayList, HashMap 등)에서 사이즈를 확인할 수 있는 메소드.
+		
+		/*
+		 *	컬렉션(ArrayList, HashMap 등)
+		 *	크기를 자유롭게 늘리거나 줄일 수 있는 자료구조.
+		 *	위의 예시와 같이 add() 메소드를 통해서 계속 데이터를 넣을 수 있다.
+		 */
 		
 		System.out.println("메인 메소드가 종료되었습니다.");
 
