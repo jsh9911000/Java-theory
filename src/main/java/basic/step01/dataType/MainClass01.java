@@ -18,6 +18,8 @@ public class MainClass01 {
 		 *  4.문자형: char
 		 *  
 		 *  리터럴: 변수의 값.
+		 *  
+		 *  int 타입은 null 불가능.
 		 */
 		
 		 System.out.println("메인 메소드가 시작되었습니다.");

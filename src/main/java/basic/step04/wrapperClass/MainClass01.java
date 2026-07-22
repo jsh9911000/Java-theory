@@ -27,6 +27,7 @@ public class MainClass01 {
 		
 		//참조 Data type이지만 기본 Data type과 동일하게 사용할수 있다.
 		//기본 Data type과 참조 Data type의 연산도 가능하다.
+		//Integer 타입은 null을 허용한다.
 		int result1=num2+1;
 		int result2=num1+num2;
 		Integer result3=num1+num2;
