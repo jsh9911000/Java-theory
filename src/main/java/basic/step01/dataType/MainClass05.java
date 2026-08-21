@@ -41,6 +41,15 @@ public class MainClass05 {
 		System.out.println(name.toLowerCase());
 		
 		System.out.println("메인 메소드가 종료되었습니다.");
+		
+		//String 타입 비교 메소드.
+		if("JOHN".equals(name)) {
+			System.out.println("String 타입의 값을 비교할 때 equals() 메소드를 사용합니다.");
+		}
+		
+		if(name == "JOHN") {
+			System.out.println("String 타입의 참조값 주소를 비교할 때 == 비교연산자를 사용합니다.");
+		}
 	}
 
 }
