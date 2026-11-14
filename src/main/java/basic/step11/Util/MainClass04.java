@@ -32,6 +32,52 @@ public class MainClass04 {
 		 *  만약 회원 한명의 정보를 담을 거면, Map 객체를 사용한다.
 		 *  회원 여러명의 정보를 담을 거면, List<userDto> 와 같이 List 객체를 사용한다.
 		 */
+		
+		/*
+		 *	MVC 패턴에서 XML로 파라미터를 전송할때 사용.
+		 */
+		
+		/* 
+		 *	[Service.java]
+		 * 
+		 *	Map<String, Object> paramMap = new HashMap<String, Object>();
+		 *		paramMap.put("name", "홍길동");
+		 *		paramMap.put("age", 30);
+		 *		paramMap.put("addr", "대한민국");
+		 *
+		 *		Dao.selectUser(paramMap);
+		 */
+		
+		/*
+		 *	[Dao.java]
+		 *
+		 *	public List<String> selectUser(Map<String,Object> paramMap) {
+		 *		return selectUser("UserDAO.selectUser", paramMap);
+		 *	}
+		 */
+		
+		/*
+		 *	[Dao.xml]
+		 *
+		 *	<mapper namespace="UserDAO">
+		 *	
+		 *	    <select id="selectUser"
+		 *	            parameterType="map"
+		 *	            resultType="map">
+		 *	
+		 *	        SELECT
+		 *	            USER_ID,
+		 *	            USER_NAME
+		 *	        FROM USER_INFO
+		 *	        WHERE USER_ID = #{userId}
+		 *	          AND USER_NAME = #{userName}
+		 *	
+		 *	    </select>
+		 *	
+		 *	</mapper>
+		 */
+		
+		
 	}
 
 }
